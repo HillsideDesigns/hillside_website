@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Hillside Designs — BIM, Digital Construction, Visualisation</title>
+  <meta name="description" content="BIM management & digital construction for multimillion-pound projects.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav>
+  <div class="nav-inner container">
+    <div class="brand"><div class="logo"></div><div class="name">Hillside Designs</div></div>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <div class="wrap">
+      <div>
+        <h1>BIM Management & Digital Construction</h1>
+        <p class="lead">Crafting innovative solutions for the future.</p>
+        <div class="ctas">
+          <a class="btn primary" href="#projects">View projects</a>
+          <a class="btn ghost" href="#contact">Book a call</a>
+        </div>
+        <div class="kpis">
+          <div class="kpi"><strong>£100M+</strong> coordinated</div>
+          <div class="kpi"><strong>12k–17k m²</strong> campus scale</div>
+          <div class="kpi"><strong>MEP</strong> clash detection</div>
+        </div>
+      </div>
+      <div class="card"><img src="images/hero.jpg" alt="Hero placeholder"></div>
+    </div>
+  </div>
+</header>
+
+<section id="about" class="section about">
+  <div class="container">
+    <h2>About</h2>
+    <div class="card">
+      Hillside Designs is a trusted leader in BIM, Digital Twin, and sustainable design solutions. Based in Co. Derry, we transform how buildings are designed, built, and managed through cutting-edge technology. Our work spans commercial, residential, and infrastructure projects — helping clients build smarter for the future.
+    </div>
+  </div>
+</section>
+
+<section id="services" class="section services">
+  <div class="container">
+    <h2>Services</h2>
+    <div class="grid cols-3">
+      <div class="card service">
+        <h3>BIM Management</h3>
+        <p>BEP setup, multi-discipline coordination, clash detection, issue tracking.</p>
+      </div>
+      <div class="card service">
+        <h3>Digital Construction</h3>
+        <p>4D/5D planning support, prefabrication readiness, QA/QC and data drops.</p>
+      </div>
+      <div class="card service">
+        <h3>Visualisation</h3>
+        <p>Design renders, concept visuals, stakeholder packs and fly-throughs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section projects">
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="grid cols-3">
+      <a class="card project-card" href="#">
+        <img src="images/project-1.jpg" alt="Project 1">
+        <div class="content">
+          <div class="badge">£46m • BIM Manager</div>
+          <h3>NRC Coleraine</h3>
+          <p>12,600m² new college campus with integrated listed building.</p>
+        </div>
+      </a>
+      <a class="card project-card" href="#">
+        <img src="images/project-2.jpg" alt="Project 2">
+        <div class="content">
+          <div class="badge">£2.5m • Design Lead</div>
+          <h3>Old Hall Farm Barns</h3>
+          <p>Grade II listed barn conversions into luxury homes.</p>
+        </div>
+      </a>
+      <a class="card project-card" href="#">
+        <img src="images/project-3.jpg" alt="Project 3">
+        <div class="content">
+          <div class="badge">£30m • BIM Manager</div>
+          <h3>Neilston Learning Campus</h3>
+          <p>Primary schools and family centre combined into one campus.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section contact">
+  <div class="container">
+    <h2>Contact</h2>
+    <div class="grid cols-2">
+      <div class="card">
+        <p><strong>Email:</strong> info@hillside-designs.co.uk</p>
+        <p><strong>Phone:</strong> +44 (0) ——— ————</p>
+        <small class="mono">Based in Northern Ireland • Working across UK & Ireland</small>
+      </div>
+      <form class="card" name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact">
+        <label>Name<br><input required name="name"></label><br><br>
+        <label>Email<br><input required type="email" name="email"></label><br><br>
+        <label>Message<br><textarea required name="message" rows="5"></textarea></label><br>
+        <button class="btn primary" type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">© <span id="y"></span> Hillside Designs — All rights reserved.</div>
+</footer>
+
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
