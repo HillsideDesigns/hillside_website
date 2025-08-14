@@ -1,55 +1,86 @@
+/* Global styles */
 body {
-  margin:0;
   font-family: 'Bitter', serif;
-  color:#0f221c;
-  background:#fff;
+  background: #fff;
+  color: #2F6854; /* main text colour */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
+
+/* Branding colours */
+:root {
+  --primary: #2F6854;   /* Main colour */
+  --secondary: #97B4AA; /* Shade */
+  --light: #CBD9D4;     /* Light shade */
+  --text-dark: #2F6854;
+  --text-light: #fff;
+}
+
+/* Navigation */
 nav {
-  background:#2F6854;
-  color:white;
-  padding:10px 20px;
+  background: var(--primary);
+  padding: 12px 0;
 }
-nav .links a {
-  margin-left:15px;
-  color:white;
-  text-decoration:none;
-  font-weight:600;
+nav a {
+  color: var(--text-light);
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
 }
+nav a:hover {
+  color: var(--secondary);
+}
+
+/* Hero Section */
 .hero {
-  display:flex;
-  align-items:center;
-  padding:60px 20px;
-  background:#CBD9D4;
+  background: var(--light);
+  padding: 80px 0;
+  text-align: center;
 }
-h1,h2,h3 {color:#2F6854;}
-.btn {
-  padding:10px 20px;
-  border-radius:6px;
-  text-decoration:none;
-  font-weight:600;
+.hero h1 {
+  font-size: 2.5rem;
+  color: var(--primary);
 }
+.hero p {
+  color: var(--secondary);
+  font-size: 1.2rem;
+}
+
+/* Buttons */
 .btn.primary {
-  background:#2F6854;
-  color:white;
+  background: var(--primary);
+  color: var(--text-light);
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.btn.primary:hover {
+  background: var(--secondary);
 }
 .btn.ghost {
-  border:2px solid #2F6854;
-  color:#2F6854;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  padding: 10px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
 }
-.section {padding:60px 20px;}
+.btn.ghost:hover {
+  background: var(--primary);
+  color: var(--text-light);
+}
+
+/* Cards */
 .card {
-  background:white;
-  border:1px solid #97B4AA;
-  border-radius:10px;
-  padding:20px;
-  margin:10px;
+  background: #fff;
+  border: 1px solid var(--light);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
 }
-.grid {display:grid; gap:20px;}
-.cols-2 {grid-template-columns:repeat(2,1fr);}
-.cols-3 {grid-template-columns:repeat(3,1fr);}
-footer {
-  background:#2F6854;
-  color:white;
-  padding:20px;
-  text-align:center;
+.card:hover {
+  transform: translateY(-5px);
 }
