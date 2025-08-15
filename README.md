@@ -1,2 +1,2 @@
 # hillsidedesigns_website
-Hillside Designs website — BIM, Digital Construction &amp; Visualisation
+Hillside Designs — BIM, Digital Construction &amp; Visualisation
